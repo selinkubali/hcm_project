@@ -1,16 +1,6 @@
 ### Running the pipeline
-1. Open a conda environment with Jupyter lab downloaded.
-2. Log into DNANexus (```dx login```)
-2. Clone this repository from GitHub 
-3. Launch jupyter lab (```jupyter lab```)
-4. Open the files vcfByGene.ipynb and vcfByGene_for_gnomAD.ipynb. Possible parameters to edit are ```tag_str, project_path, dx_vcf_path, dx_vcf_out_path, genes````
-5. Run all cells in each notebook. The output should be available in your DNANexus project once the tasks have finished.
+- The notebooks in Step 1: Data Extraction should be downloaded and run locally from a session logged into DNANexus, in accordance with instructions given here: https://github.com/TYTYBU/vcfByGene
+– All other notebooks should be uploaded to a UK Biobank/DNANexus project and run in the order given in the folders. Between each run, either refresh the directory or finish the current JupyterLab session and start a new one. Within each folder, notebooks can be run in any order.
 
 
-6. Download other files into your DNANexus project. Open a JupyterLab session within the DNANexus interface and work from there. 
-7. Run the following notebooks in any order: ```generate_parse_phenotypic_data.ipynb, clean_vcf_files.ipynb, gnomad_processing.ipynb```, and ```load_alpha_missense.ipynb```.
-8. Update directory or finish the current JupyterLab session and start a new one.
-9. Run the following notebook: ```create_model_for_all_patients.ipynb```.
-10. Update directory or finish the current JupyterLab session and start a new one.
-11. Run the following notebooks in any order for data analysis: ```bar_charts_by_clinvar.ipynb, bar_graph_threshold.ipynb, cross_val.ipynb,``` and ```cross_val.ipynb```.
 
